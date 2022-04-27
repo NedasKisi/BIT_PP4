@@ -39,4 +39,19 @@ function readItems() {
    listBox.innerHTML = htmlCode;
 }
 
+function deleteshopItem(ind) {
+   itemsArray.splice(ind, 1);
+   localStorage.setItem("shopItem", JSON.stringify(itemsArray));
+   readItems();
+}
+
+saveItemButton.addEventListener("click", () => {
+   itemsArray[currentIndex] = {value: text.value, done: false};
+   addItemButton.style.display = "inline";
+   saveItemButton.style.display = "none";
+   text.value = "";
+   localStorage.setItem("shopItem", JSON.stringify(itemsArray));
+   readItems();
+});
+
 readItems()
