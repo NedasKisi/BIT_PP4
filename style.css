@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+   background: linear-gradient(0deg, rgb(239, 240, 240) 0%, rgb(62, 62, 63) 100%);
+   background-repeat: no-repeat;
+   color: rgb(250, 244, 244);
+   height: 100%;
+   min-height: 100vh;
+   font-family: 'Poppins', sans-serif;
+}
+.container {
+   display: flex;
+   justify-content: center;
+   flex-shrink:0;
+   min-height: 50vh;
+}
+.container__app{
+   width: 70%;
+   display: flex;
+   flex-direction: column;
+   border-radius: 15px;
+}
+.upper {
+   margin: 100px 0; 
+   border-radius: 15px;
+}
+h1 {
+   text-align: center;
+}
+.input__field {
+   display: flex;
+   justify-content: flex-end;
+   flex-grow: 1;
+   border-radius: 15px;
+}
+#text {
+   width:100%;
+   font-size: 25px;
+   height: 40px;
+   border-radius: 15px;
+   border: none;
+   font-family: 'Poppins', sans-serif;
+   font-style: italic;
+}
+.input__field button {
+background: rgb(250, 244, 244);
+border:none;
+margin:0 3px;
+border-radius:15px;
+}
+#listBox {
+   display: flex;
+   flex-direction: column;
+}
+.itemsLi {
+display:flex;
+align-items: center;
+flex-shrink: 1;
+/* background-color:rgba(67, 6, 121, 0.479); */
+background: rgba(218, 144, 7, 0.726);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+border-radius:15px;
+margin: 5px 0;
+font-size: 18px;
+}
+input[type="checkbox"] {
+   margin-left: 8px;
+}
+input[type="checkbox"]:checked ~ p {
+   text-decoration: line-through;
+   color: yellow;
+}
+input[type="checkbox"]:checked ~ button:first-of-type {
+   display: none;
+}
+.itemText{
+   width: 100%;
+   min-width: 0;
+   margin-left: 10px;
+   font-weight: bold;
+}
+
+
+
+
+/* Buttons */
+.edit__button, .deleteButton {
+width: 20px;
+margin: 0 20px;
+background-color: transparent;
+border: none;
+}
+.upper button{
+   width: 10%;
+   width: 80px;;
+}
+.upper button:hover{
+   color:rgb(0, 75, 187);
+   background-color: black;
+}
+.save__item {
+color: rgb(110, 250, 110);
+}
+#edit__icon:hover {
+   color: rgb(38, 221, 245);
+}
+#bin__icon:hover {
+   color:rgb(221, 18, 18);
+}
