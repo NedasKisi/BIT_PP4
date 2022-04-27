@@ -45,6 +45,18 @@ function deleteshopItem(ind) {
    readItems();
 }
 
+function edit(ind) {
+   currentIndex = ind;
+   text.value = itemsArray[ind].value;
+   addItemButton.style.display = "none";
+   saveItemButton.style.display = "inline";
+}
+
+function toggle(ind) {
+   itemsArray[ind].done = !itemsArray[ind].done;
+   localStorage.setItem("shopItem", JSON.stringify(itemsArray));
+}
+
 saveItemButton.addEventListener("click", () => {
    itemsArray[currentIndex] = {value: text.value, done: false};
    addItemButton.style.display = "inline";
