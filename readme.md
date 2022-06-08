@@ -2,9 +2,9 @@
 
 ## Shopping list using dom manipulation and local storage.
 
-# _Priority over functionality rather than styling. Marking target: use of javascript and local storage_
+_Priority over functionality rather than styling. Marking target: use of javascript and local storage_
 
-# How to use
+## How to use
 
 - In the input field type in item name and press + button.
 - Item will appear below.
@@ -13,7 +13,7 @@
 - You can edit list items by pressing edit button on the list item. You will need to add corrections inside the input task and press save button which will appear instead of + button.
 - If items are bought you can check them to mark them as item bought. Item will be crossed out and edit function will dissapear.
 
-# Project tasks
+## Project tasks
 
 - Create shopping list app using javascript and localstorage.
 - Create add item function.
@@ -25,7 +25,7 @@
 - Keep the code clean - structure ,validity, website, github.
 - Create readme.md.
 
-# Project workflow
+## Project workflow
 
 - 1.Layout creation, minimal styling to satisfy upcoming functions.
 - 2.Added add item function which lets us add items to our shopping list and stores it in local storage.
@@ -40,7 +40,7 @@
 - 11.Uploaded to github to satisfy condtional commits, enabled github pages - can be accessed:
   [Sprint4/PP4](https://nedaskisi.github.io/BIT_PP4/)
 
-# Goal
+## Goal
 
 To create working shopping list with local storage.
 
